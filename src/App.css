@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
+  display:flex;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 40px 24px;
+}
+
+.app_input{
+  width: 100%;
+  max-width: 200px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+.app_input input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+.app_input input>value{
+      color:white;
+}
+
+::placeholder{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.app_input:active{
+  cursor: url(https://www.rw-designer.com/cursor-view/31772.png) 10 2, auto;
+  
+}
+.app_input:hover{
+  cursor: url(https://www.rw-designer.com/cursor-view/31772.png) 10 2, auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.drop:active{
+  cursor: url(https://www.rw-designer.com/cursor-view/31772.png) 10 2, auto;
+}
+.drop:hover{
+  cursor: url(https://www.rw-designer.com/cursor-view/31772.png) 10 2, auto;
+}
+.sort:active{
+  cursor: url(https://www.rw-designer.com/cursor-view/31772.png) 10 2, auto;
+}
+.sort:hover{
+  cursor: url(https://www.rw-designer.com/cursor-view/31772.png) 10 2, auto;
+}
+
+.tile{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sortb{
+  font-size: 14px;
+}
+
+.sort{
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+}
+.sort option{
+  background: #272e61;
+  
+}
+
+.app_searchForm{
+  display: flex;
+}
+
+.drop{
+  background: rgba(255,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  color: white;
+  
+}
+.drop option{
+  background: #272e61;
+}
+
+.sortbox{
+  display: flex;
+  gap: 10px;
+}
+.app_searchForm{
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 700px){
+  .tile{
+    display: grid;
+    grid-template-columns: 200px;
+    gap: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  .app_searchForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
