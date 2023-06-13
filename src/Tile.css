@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
         background-color: #202020;
         color: white;
@@ -90,3 +91,97 @@ body{
                 width: 205px;
         }
 }
+=======
+body{
+        background-color: #202020;
+        color: white;
+}
+.box{
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        transition: 1s;
+        width: 205px;
+}
+
+.box .img{
+        height: 300px;
+        box-shadow:  5px 5px 10px #000;
+        
+        
+}
+
+.box span{
+        position: absolute;
+        top: 0;
+        left: -110%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient( to top, transparent, #fff 15%, rgba(227, 227, 227,0.3) ); 
+        transition: .6s;
+        transform: skewX(10deg);
+}
+.box .img:hover{
+        
+        
+        box-shadow:  5px 10px 10px #000;
+
+        
+}
+.box .img:active{
+        cursor: url(http://www.rw-designer.com/cursor-view/31772.png) 10 2, auto;
+}
+
+.box:hover{
+        transform: scale(1.05);
+        transition: transform .6s;
+}
+.box:hover span{
+        left: 110%;
+        
+}
+
+.p{
+        color:white;
+}
+
+.content{
+        max-width: 205px;
+        background: #272e61;
+        padding: 1px 0px;
+        text-align: center;
+        border-radius: 20px 20px 0px 0px ;
+        font-size: 14px;
+}
+
+.content2{
+        background: #272e61;
+        text-align: center;
+        margin: 0px;
+        padding: 2px 0px;
+        max-width: 205px;
+
+}
+.content3{
+        background: #667196;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 0px 0px 20px 20px;
+        max-width: 205px;
+}
+
+@media only screen and (max-width: 700px){
+        .content2{
+                padding: 2px 0px;
+                width: 205px;
+        }
+        .content3{
+                padding: 2px 0px;
+                width: 205px;
+        }
+        .content{
+                padding: 2px 0px;
+                width: 205px;
+        }
+}
+>>>>>>> 0fcd9077208a1fb2a1f6789d12acdfd7da6f8c89
