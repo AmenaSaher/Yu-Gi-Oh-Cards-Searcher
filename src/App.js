@@ -13,9 +13,6 @@ function App() {
   const [sort, setSort] = useState("new")
   const [loading,setLoading] = useState(false)
 
-   //type=
-  //https://db.ygoprodeck.com/api/v7/cardinfo.php?cardset=metal%20raiders&num=10&offset=0
-  // &num=10&offset=0
   useEffect(()=>{
     async function getCards(){
       var url = `https://db.ygoprodeck.com/api/v7/cardinfo.php?attribute=${attr}&fname=${query}&sort=${sort}&num=12&offset=0`
@@ -49,11 +46,6 @@ function App() {
         value={query} 
         onChange={(e) => setQuery(e.target.value)} onSubmit={(e) => e.preventDefault()}/>
 
-        
-        {/* <input 
-        className='app_submit'
-        type="submit" 
-        value="Search" /> */}
         
         <select 
         className='drop'
@@ -107,4 +99,3 @@ function App() {
 }
 
 export default App;
-//onSubmit={onSubmit} on app_input onchange
